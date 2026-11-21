@@ -1,0 +1,5 @@
+# Standalone registration for the official DSH profile loader.
+# Adds the "Conversation Rewind" client plugin to the web profile.
+- insert:
+    - id: rewind-message
+      name: 'dsh-rewind-message'
