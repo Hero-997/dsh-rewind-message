@@ -1,0 +1,43 @@
+{
+  "name": "dsh-rewind-message",
+  "version": "0.1.0",
+  "description": "Rewind & edit for DeepSeek Harness Web: long-press or right-click a sent user message, edit it inline, and resend it as a fresh branch (previous turns stay on the original branch).",
+  "license": "MIT",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js"
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.5 <0.3.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "cordis.patch.yml"
+    },
+    "client": {
+      "entry": "client",
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.5 <5",
+    "@deepseek-ai/dsh": ">=0.2.1-rc.5 <0.2.1 || >=0.2.1 <0.3.0"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "rewind",
+    "edit-message",
+    "resend",
+    "conversation"
+  ],
+  "files": [
+    "LICENSE",
+    "README.md",
+    "cordis.patch.yml",
+    "lib"
+  ]
+}
